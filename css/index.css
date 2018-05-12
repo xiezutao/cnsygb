@@ -1,0 +1,744 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: transparent;
+  background-size: 100% 100%;
+}
+header {
+  height: 49px;
+  line-height: 49px;
+  color: white;
+  background: #000;
+  text-align: center;
+}
+header span {
+  line-height: 49px;
+  font-size: 18px;
+}
+header .return {
+  position: absolute;
+  top: 2px;
+  left: 23px;
+  line-height: 49px;
+  font-size: 18px;
+}
+/*战略合作开始*/
+.strategy-box {
+  width: 344px;
+  height: 283px;
+  padding-top: 31px;
+  border-radius: 10px;
+  margin: 31px auto 0;
+  background: rgba(255, 255, 255, 0.16);
+}
+.strategy-box img {
+  margin-bottom: 20px;
+}
+.strategy-box p {
+  margin-top: 220px;
+  text-align: center;
+  font-size: 10px;
+  color: #999999;
+}
+@media screen and (max-width: 320px) {
+  .strategy-box {
+    width: 100%;
+  }
+}
+/*战略合作结束*/
+/*新用户注册开始*/
+.register-box {
+  width: 344px;
+  height: 283px;
+  padding-top: 31px;
+  border-radius: 10px;
+  margin: 31px auto 0;
+  background: rgba(255, 255, 255, 0.16);
+}
+.register-box ul li {
+  margin: 0 auto;
+  width: 312px;
+  height: 38px;
+  line-height: 38px;
+  background: transparent;
+  border: 1px solid #999999;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+.register-box ul li span {
+  padding-left: 10px;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+}
+.register-box ul li .verify {
+  font-family: PingFang-SC-Regular;
+  font-weight: initial !important;
+  border-left: 1px solid #999999;
+}
+.register-box ul li input {
+  height: 38px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+.register-box button {
+  margin: 20px auto;
+  width: 131px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  background: #ffbc1c;
+}
+.register-box p {
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .register-box {
+    width: 100%;
+  }
+  .register-box ul li {
+    width: 270px;
+  }
+  .register-box ul li input {
+    width: 110px;
+  }
+}
+/*新用户注册结束*/
+/*购买成功开始*/
+.succeed-box {
+  margin-top: 200px;
+  text-align: center;
+}
+.succeed-box .succeed-text1 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+.succeed-box .succeed-text2 {
+  font-size: 10px;
+  color: #333333;
+}
+/*购买成功结束*/
+/*联系我们开始*/
+.contact-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 47px;
+  line-height: 47px;
+  background: white;
+}
+.contact-box i {
+  display: inline-block;
+  padding: 2px 3px 0;
+  font-size: 180%;
+}
+.contact-box input {
+  height: 33px;
+  width: 70%;
+  border: 1px solid #dfdfdf;
+}
+@media screen and (max-width: 320px) {
+  .contact-box {
+    width: 100%;
+  }
+  .contact-box i {
+    padding: 0;
+  }
+}
+/**联系我们结束*/
+/*个人资料开始*/
+.personal-box {
+  width: 345px;
+  margin: 0 auto;
+}
+.personal-box #personal-nav {
+  margin: 18px auto 35px;
+  width: 345px;
+}
+.personal-box #personal-nav li {
+  margin: 0 30px;
+  display: inline-block;
+  font-size: 15px;
+  color: #666666;
+}
+.personal-box #personal-nav .active {
+  color: white;
+  border-bottom: 1px solid #f5f5f5;
+}
+.personal-box .content-box {
+  position: relative;
+}
+.personal-box .content-box .gathering {
+  height: 278px !important;
+}
+.personal-box .content-box .content-data {
+  position: absolute;
+  display: none;
+  width: 345px;
+  height: 210px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 15px;
+  color: white;
+}
+.personal-box .content-box .content-data ul {
+  padding: 30px 14px 0;
+}
+.personal-box .content-box .content-data ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #f5f5f5;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #999999;
+  letter-spacing: 2px;
+}
+.personal-box .content-box .content-data ul li span {
+  margin-right: 5px;
+  letter-spacing: 2px;
+}
+.personal-box .content-box .content-data ul li input {
+  width: 180px;
+  letter-spacing: 2px;
+  border: none;
+  background: transparent;
+}
+.personal-box .content-box .content-data p {
+  margin-top: 206px;
+  text-align: center;
+}
+.personal-box .content-box .content-data p button {
+  width: 345px;
+  height: 44px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  background: #e3ab24;
+}
+@media screen and (max-width: 320px) {
+  .personal-box {
+    width: 310px;
+    margin: 0 auto !important;
+  }
+  .personal-box #personal-nav {
+    width: 310px !important;
+    margin: 18px 30px 35px !important;
+  }
+  .personal-box #personal-nav li {
+    display: inline-block !important;
+    width: 95px !important;
+    margin: 0;
+  }
+  .personal-box #personal-nav .active {
+    display: inline-block;
+    color: white;
+    border-bottom: none;
+  }
+  .personal-box .content-data {
+    position: absolute;
+    display: none;
+    width: 310px !important;
+    height: 210px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 15px;
+    color: white;
+  }
+  .personal-box .content-data ul {
+    padding: 30px 14px 0;
+  }
+  .personal-box .content-data ul li {
+    width: 280px !important;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #f5f5f5;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #999999;
+    letter-spacing: 2px;
+  }
+  .personal-box .content-data ul li span {
+    margin-right: 5px;
+    letter-spacing: 2px;
+  }
+  .personal-box .content-data ul li input {
+    letter-spacing: 2px;
+    border: none;
+    background: transparent;
+  }
+  .personal-box .content-data p {
+    margin-top: 26px;
+    text-align: center;
+  }
+  .personal-box .content-data p button {
+    width: 300px !important;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    background: #e3ab24;
+  }
+}
+/*个人资料结束*/
+/*我要推荐 开始*/
+.recommend-box img {
+  width: 100%;
+  height: 100%;
+}
+/*我要推荐结束*/
+/*我的矿机开始*/
+#my-mill-header {
+  width: 210px;
+  margin: 15px auto 0;
+}
+#my-mill-header li {
+  display: inline-block;
+  width: 68px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+  border: 1px solid #31aae2;
+  border-radius: 8px;
+}
+#my-mill-header .active {
+  color: white;
+  background: #31aae2;
+}
+.my-mill-box .my-mill-ul1 {
+  position: relative;
+}
+.my-mill-box .my-mill-ul1 .my-mill-data {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.my-mill-box .my-mill-ul1 .my-mill-data .my-mill-ul2 {
+  width: 100%;
+  margin-bottom: 4px;
+  height: 89px;
+  line-height: 89px;
+  padding: 3px 15px;
+  background: rgba(255, 255, 255, 0.16);
+}
+.my-mill-box .my-mill-ul1 .my-mill-data .my-mill-ul2 img {
+  float: left;
+}
+.my-mill-box .my-mill-ul1 .my-mill-data .my-mill-ul2 .my-mill-ul3 {
+  margin-left: 18px;
+  margin-top: 6px;
+  line-height: 18px;
+  float: left;
+  font-size: 10px;
+  color: white;
+}
+.my-mill-box .my-mill-ul1 .my-mill-data .my-mill-ul2 span {
+  float: right;
+  display: inline-block;
+  color: #e3ab24;
+  font-size: 10px;
+}
+.my-mill-box .my-mill-ul1 .my-mill-data .my-mill-ul2 span a {
+  padding: 2px 6px;
+  height: 15px;
+  font-size: 9px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: normal;
+  background: #ffbc1c;
+}
+@media screen and (max-width: 320px) {
+  #my-mill-header {
+    width: 100%;
+  }
+  #my-mill-header li {
+    display: inline-block;
+    width: 70px !important;
+  }
+  .my-mill-ul2 {
+    width: 320px !important;
+    margin-bottom: 4px;
+    height: 89px;
+    line-height: 89px;
+    padding: 3px 15px;
+    background: rgba(255, 255, 255, 0.16);
+  }
+  .my-mill-ul2 img {
+    float: left;
+  }
+  .my-mill-ul2 .my-mill-ul3 {
+    margin-left: 18px;
+    margin-top: 6px;
+    line-height: 18px;
+    float: left;
+    font-size: 10px;
+    color: white;
+  }
+  .my-mill-ul2 .my-mill-ul3 li {
+    width: 150px !important;
+  }
+  .my-mill-ul2 span {
+    float: right;
+    display: inline-block;
+    color: #e3ab24;
+    font-size: 10px;
+  }
+  .my-mill-ul2 span a {
+    padding: 2px 6px;
+    height: 15px;
+    font-size: 9px;
+    border-radius: 3px;
+    color: #000;
+    font-weight: normal;
+    background: #ffbc1c;
+  }
+}
+/*我的矿机结束*/
+/*支出管理开始*/
+.expenditure-box #expenditure-nav {
+  font-size: 15px;
+  color: #999999;
+  background: white;
+}
+.expenditure-box #expenditure-nav li {
+  margin: 5% 15%;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  width: 60px;
+}
+.expenditure-box #expenditure-nav .active {
+  color: #222222;
+  border-bottom: 2px solid #222222;
+}
+.expenditure-box .list-content {
+  position: relative;
+}
+.expenditure-box .list-content .tab-box {
+  display: none;
+}
+.expenditure-box .list-content .tab-box table {
+  width: 100%;
+  margin: 0 auto;
+}
+.expenditure-box .list-content .tab-box tr {
+  border-bottom: 1px solid #d5d5d5;
+}
+.expenditure-box .list-content .tab-box tr th {
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+  width: 25%;
+  color: #222222;
+  background: white;
+}
+.expenditure-box .list-content .tab-box tr td {
+  height: 32px;
+  line-height: 32px;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+  font-weight: 100;
+  width: 25%;
+}
+.expenditure-box .list-content .tab-box tr .date {
+  display: inline-block;
+  padding-left: 1px;
+  width: 99px;
+}
+.expenditure-box .list-content .tab-box tr .biangeng {
+  display: inline-block;
+  padding-left: 20%;
+  width: 78px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: 320px) {
+  .expenditure-box {
+    width: 100%;
+  }
+  .expenditure-box .biangeng {
+    display: inline-block;
+    padding-left: 15% !important;
+    width: 65px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 500px) {
+  .expenditure-box > #expenditure-nav > li {
+    margin: 5% 18%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .expenditure-box > #expenditure-nav > li {
+    margin: 5% 20%;
+  }
+}
+/*支出管理结束*/
+/**系统公告开始*/
+.announcement-box {
+  color: white;
+}
+.announcement-box p {
+  height: 31px;
+  line-height: 31px;
+  width: 100%;
+}
+.announcement-box p b {
+  margin-left: 48%;
+  display: inline-block;
+  font-size: 12px;
+  text-align: right;
+  font-weight: inherit;
+}
+.announcement-box p .time {
+  float: right;
+  margin-left: 0;
+  margin-right: 24px;
+}
+.announcement-box ul {
+  background: rgba(255, 255, 255, 0.14);
+  border-top: 1px solid #999999;
+}
+.announcement-box ul li {
+  padding: 0 16px;
+  height: 34px;
+  font-size: 10px;
+  line-height: 34px;
+  border-bottom: 1px solid #999999;
+}
+.announcement-box ul li span {
+  float: right;
+}
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -142px;
+  margin-top: -222px;
+  width: 284px;
+  height: 334px;
+  background: white;
+  border-radius: 15px;
+  color: #333333;
+  font-size: 10px;
+}
+.pop-up i {
+  float: right;
+  padding: 12px;
+}
+.pop-up ul {
+  padding: 38px 22px 0;
+}
+.pop-up ul li {
+  line-height: 23px;
+  color: #333333;
+  zoom: 0.7;
+}
+.pop-up ul .front {
+  margin-bottom: 20px;
+}
+.pop-up ul .content {
+  text-indent: 26px;
+  font-weight: 100 !important;
+}
+.pop-up ul .btm {
+  margin: 10px auto;
+  text-align: center;
+}
+/**系统公告结束*/
+/**密码修改开始*/
+.password-box {
+  width: 345px;
+  margin: 0 auto;
+}
+.password-box #personal-nav {
+  margin: 18px auto 35px;
+  width: 345px;
+}
+.password-box #personal-nav li {
+  margin: 0 40px;
+  display: inline-block;
+  font-size: 15px;
+  color: #666666;
+}
+.password-box #personal-nav .active {
+  color: white;
+  border-bottom: 1px solid #f5f5f5;
+}
+.password-box .content-box {
+  position: relative;
+}
+.password-box .content-box .gathering {
+  height: 278px !important;
+}
+.password-box .content-box .content-data {
+  position: absolute;
+  display: none;
+  width: 345px;
+  height: 210px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 15px;
+  color: white;
+}
+.password-box .content-box .content-data ul {
+  padding: 30px 14px 0;
+}
+.password-box .content-box .content-data ul li {
+  font-size: 14px;
+  color: #f5f5f5;
+  line-height: 30px;
+  border-bottom: 1px solid #999999;
+  letter-spacing: 2px;
+}
+.password-box .content-box .content-data ul li span {
+  margin-right: 5px;
+  letter-spacing: 2px;
+}
+.password-box .content-box .content-data ul li input {
+  letter-spacing: 2px;
+  border: none;
+  background: transparent;
+}
+.password-box .content-box .content-data p {
+  margin-top: 80px;
+  text-align: center;
+}
+.password-box .content-box .content-data p button {
+  margin-top: 50px;
+  width: 345px;
+  height: 44px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  background: #e3ab24;
+}
+@media screen and (max-width: 320px) {
+  .password-box {
+    width: 310px;
+    margin: 0 auto !important;
+  }
+  .password-box #personal-nav {
+    width: 310px !important;
+    margin: 18px 30px 35px !important;
+  }
+  .password-box #personal-nav li {
+    display: inline-block !important;
+    margin: 0 30px;
+  }
+  .password-box #personal-nav .active {
+    display: inline-block;
+    color: white;
+  }
+  .password-box .content-data {
+    position: absolute;
+    display: none;
+    width: 310px !important;
+    height: 210px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 15px;
+    color: white;
+  }
+  .password-box .content-data ul {
+    padding: 30px 14px 0;
+  }
+  .password-box .content-data ul li {
+    width: 280px !important;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #f5f5f5;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #999999;
+    letter-spacing: 2px;
+  }
+  .password-box .content-data ul li span {
+    margin-right: 5px;
+    letter-spacing: 2px;
+  }
+  .password-box .content-data ul li input {
+    letter-spacing: 2px;
+    border: none;
+    background: transparent;
+  }
+  .password-box .content-data p {
+    margin-top: 26px;
+    text-align: center;
+  }
+  .password-box .content-data p button {
+    width: 300px !important;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    background: #e3ab24;
+  }
+}
+/*密码修改结束*/
+/*404开始*/
+.cannot-box {
+  text-align: center;
+}
+.cannot-box button {
+  margin-top: 115%;
+  color: #458ffa;
+  width: 98px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #5a9bef;
+  border-radius: 17px ;
+}
+/**404结束*/
+/**矿机详情开始*/
+.particulars-box img {
+  width: 100%;
+}
+.particulars-box ul {
+  padding: 15px;
+}
+.particulars-box ul li {
+  font-size: 10px;
+}
+.particulars-box ul li i {
+  color: #c0c0c0;
+  margin-right: 10px ;
+}
+.particulars-box ul li span {
+  color: #c0c0c0;
+}
+.particulars-box ul .price {
+  font-family: MicrosoftYaHei;
+  font-size: 15px;
+  color: #ffbc1c;
+  margin-bottom: 15px;
+}
+.particulars-box ul .intro {
+  margin-right: 50px;
+  color: white;
+  margin-bottom: 15px;
+}
+.particulars-box ul .buy {
+  margin-top: 15px;
+}
+.particulars-box ul .buy span {
+  margin-right: 30px;
+}
+.particulars-box ul .buy button {
+  padding: 1.5px 4%;
+  color: #000;
+  float: right;
+  background: #ffbc1c;
+  border-radius: 3px ;
+  border: none;
+}
+#myModal {
+  position: absolute;
+  bottom: 0;
+}
+/**矿机详情结束*/

@@ -1,0 +1,1892 @@
+/*========================默认样式=========================*/
+/*========================default css======================*/
+@charset "UTF-8";
+html,body,div,section,article,aside,nav,footer,p,dl,dt,dd,ul,li,ol,span,em,a,del,h1,h2,h3,h4,h5,h6,iframe,object,form, label, legend,caption, tbody, tfoot, thead, tr, th, td,menu,audio,video{padding:0;margin:0;
+}
+hr{border: 0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+ul,ol,li{list-style: none;}
+html{font-family: PingFang-SC-Bold;font-size:12px;color:#333;;width:100%;}
+img{border:none;vertical-align:middle;}
+em,i{font-style: normal;}
+input,button,select,option,textarea{cursor:pointer;outline:none;font-family:Arial,'PingFang SC','Microsoft YaHei',Verdana,san-serif;}
+.clearfix:after{clear:both;height:0;content:'';display: block;overflow: hidden;}
+.clearfix{zoom:1;}
+a {text-decoration:none;background-color: transparent;color: inherit;}
+a:active,a:hover {outline: 0;text-decoration:none;}
+@font-face {
+  font-family: 'iconfont';  /* project id 619188 */
+  src: url('//at.alicdn.com/t/font_619188_28cwh87cdb8iwwmi.eot');
+  src: url('//at.alicdn.com/t/font_619188_28cwh87cdb8iwwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_619188_28cwh87cdb8iwwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_619188_28cwh87cdb8iwwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_619188_28cwh87cdb8iwwmi.svg#iconfont') format('svg');
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background:transparent;
+  background-size: cover;
+  font-family: 'PingFang-SC-Regular';
+  background-attachment:fixed;
+}
+header{
+  .yh-header{
+    position: relative;
+    height: 49px;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    line-height: 49px;
+    i{
+      margin-left: 23px;
+    }
+    span{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 19px;
+    }
+  }
+}
+section{
+  //交易管理弹框定位
+  #myModal1{
+    position: absolute;
+    top: 158px;
+    text-align: center;
+    .modal-body{
+      ul{
+        line-height: 2;
+        li{
+          color: #1d2124;
+        }
+        li:nth-child(10){
+          background-color: #1d2124;
+          height: 1px;
+          line-height: 0.5;
+        }
+      }
+    }
+  }
+  //交易大厅
+  .yh-jydt-section{
+    .yh-jydt-section-one{
+      width: 347px;
+      height: 157px;
+      margin: 14px auto 0;
+      background-color: rgba(255,255,255,0.32);
+    }
+    .yh-jydt-section-two{
+      width: 345px;
+      height: 34px;
+      line-height: 34px;
+      margin: 17px auto 0;
+      font-size: 16px;
+      color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: rgba(255,255,255,0.32);
+      li{
+        float: left;
+        text-align: center;
+        width: 49%;
+      }
+      li.tb-active{
+        color: rgb(255,188,28);
+      }
+      hr{
+        position: relative;
+        top:6px;
+        width: 1px;
+        height: 22px;
+        background-color: white;
+      }
+    }
+    .yh-jydt-section-three {
+      .yh-jydt-section-three1 > button {
+        width: 313px;
+        height: 34px;
+        border: 0;
+        color: white;
+        position: absolute;
+        top: 160px;
+        left: 14px;
+        outline: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: rgb(0, 151, 179);
+      }
+      .yh-jydt-section-three1 {
+        width: 345px;
+        height: 550px;
+        margin: 16px auto 60px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.32);
+        position: relative;
+        span {
+          line-height: 1;
+          color: white;
+          font-size: 13px;
+        }
+        span:nth-child(1) {
+          position: absolute;
+          top: 34px;
+          left: 18px;
+        }
+        span:nth-child(2) {
+          position: absolute;
+          top: 76px;
+          left: 18px;
+        }
+        span:nth-child(3) {
+          position: absolute;
+          top: 118px;
+          left: 18px;
+        }
+        input {
+          width: 313px;
+          height: 34px;
+          line-height: 34px;
+          border: 1px rgb(135, 135, 135) solid;
+          background-color: transparent;
+          padding-left: 50px;
+          color: white;
+        }
+        input:nth-child(4) {
+          position: absolute;
+          top: 25px;
+          left: 14px;
+          width: 210px;
+        }
+        input:nth-child(5) {
+          position: absolute;
+          top: 68px;
+          left: 14px;
+        }
+        input:nth-child(6) {
+          position: absolute;
+          top: 111px;
+          left: 14px;
+        }
+        select{
+          position: absolute;
+          top: 25px;
+          left: 231px;
+          height: 34px;
+          line-height: 34px;
+          color: white;
+          border: 1px rgb(135, 135, 135) solid;
+
+          background-color: transparent;
+          option{
+            height: 34px;
+            line-height: 34px;
+            outline: none;
+            border: 0;
+            background-color: #545b62;
+          }
+        }
+
+        #myModal{
+          position: absolute;
+          top: 125px;
+          .modal-body{
+            padding: 50px 0;
+            text-align: center;
+          }
+        }
+        ul {
+          position: relative;
+          top:40px;
+          li > button:nth-child(6) {
+            position: absolute;
+            top: 25px;
+            left: 270px;
+            display: block;
+            width: 40px;
+            height: 20px;
+            line-height: 10px;
+            white-space: nowrap;
+            color: white;
+            background-color: transparent;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px rgb(0, 151, 179) solid;
+          }
+          button:hover{
+            background-color: #0097b3;
+          }
+          li:nth-child(1) {
+            position: absolute;
+            top: 185px;
+            left: 0px;
+            width: 100%;
+            height: 55px;
+            padding-left: 15px;
+            border-bottom: 1px rgb(135, 135, 135) solid;
+            img {
+              width: 36px;
+            }
+            span {
+              white-space: nowrap;
+              font-size: 12px;
+            }
+            span:nth-child(2) {
+              position: absolute;
+              top: 0;
+              left: 57px;
+            }
+            span:nth-child(3) {
+              position: absolute;
+              top: 15px;
+              left: 57px;
+            }
+            span:nth-child(4) {
+              position: absolute;
+              top: 32px;
+              left: 57px;
+            }
+            span:nth-child(5) {
+              position: absolute;
+              top: 1px;
+              left: 260px;
+              color: rgb(255, 180, 0);
+            }
+            button:hover{
+              background-color: #0097b3;
+            }
+          }
+          li:nth-child(2) {
+            position: absolute;
+            top: 250px;
+            left: 0px;
+            width: 100%;
+            height: 55px;
+            padding-left: 15px;
+            border-bottom: 1px rgb(135, 135, 135) solid;
+            img {
+              width: 36px;
+            }
+            span {
+              white-space: nowrap;
+              font-size: 12px;
+            }
+            span:nth-child(2) {
+              position: absolute;
+              top: 0;
+              left: 57px;
+            }
+            span:nth-child(3) {
+              position: absolute;
+              top: 15px;
+              left: 57px;
+            }
+            span:nth-child(4) {
+              position: absolute;
+              top: 32px;
+              left: 57px;
+            }
+            span:nth-child(5) {
+              position: absolute;
+              top: 1px;
+              left: 260px;
+              color: rgb(255, 180, 0);
+            }
+          }
+          li:nth-child(3) {
+            position: absolute;
+            top: 320px;
+            left: 0px;
+            width: 100%;
+            height: 55px;
+            padding-left: 15px;
+            border-bottom: 1px rgb(135, 135, 135) solid;
+            img {
+              width: 36px;
+            }
+            span {
+              white-space: nowrap;
+              font-size: 12px;
+            }
+            span:nth-child(2) {
+              position: absolute;
+              top: 0;
+              left: 57px;
+            }
+            span:nth-child(3) {
+              position: absolute;
+              top: 15px;
+              left: 57px;
+            }
+            span:nth-child(4) {
+              position: absolute;
+              top: 32px;
+              left: 57px;
+            }
+            span:nth-child(5) {
+              position: absolute;
+              top: 1px;
+              left: 260px;
+              color: rgb(255, 180, 0);
+            }
+          }
+          li:nth-child(4) {
+            position: absolute;
+            top: 390px;
+            left: 0px;
+            width: 100%;
+            height: 55px;
+            padding-left: 15px;
+            border-bottom: 1px rgb(135, 135, 135) solid;
+            img {
+              width: 36px;
+            }
+            span {
+              white-space: nowrap;
+              font-size: 12px;
+            }
+            span:nth-child(2) {
+              position: absolute;
+              top: 0;
+              left: 57px;
+            }
+            span:nth-child(3) {
+              position: absolute;
+              top: 15px;
+              left: 57px;
+            }
+            span:nth-child(4) {
+              position: absolute;
+              top: 32px;
+              left: 57px;
+            }
+            span:nth-child(5) {
+              position: absolute;
+              top: 1px;
+              left: 260px;
+              color: rgb(255, 180, 0);
+            }
+          }
+          li:nth-child(5) {
+            position: absolute;
+            top: 460px;
+            left: 0px;
+            width: 100%;
+            height: 55px;
+            padding-left: 15px;
+            border-bottom: 1px rgb(135, 135, 135) solid;
+            img {
+              width: 36px;
+            }
+            span {
+              white-space: nowrap;
+              font-size: 12px;
+            }
+            span:nth-child(2) {
+              position: absolute;
+              top: 0;
+              left: 57px;
+            }
+            span:nth-child(3) {
+              position: absolute;
+              top: 15px;
+              left: 57px;
+            }
+            span:nth-child(4) {
+              position: absolute;
+              top: 32px;
+              left: 57px;
+            }
+            span:nth-child(5) {
+              position: absolute;
+              top: 1px;
+              left: 260px;
+              color: rgb(255, 180, 0);
+            }
+          }
+        }
+      }
+      .yh-jydt-section-three2 {
+        width: 345px;
+        height: 550px;
+        margin: 16px auto 60px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.32);
+        position: relative;
+        span {
+          color: white;
+          font-size: 13px;
+        }
+        span:nth-child(1) {
+          position: absolute;
+          top: 34px;
+          left: 18px;
+        }
+        span:nth-child(2) {
+          position: absolute;
+          top: 76px;
+          left: 18px;
+        }
+        input {
+          width: 313px;
+          height: 34px;
+          border: 1px rgb(135, 135, 135) solid;
+          background-color: transparent;
+        }
+        input:nth-child(3) {
+          position: absolute;
+          top: 25px;
+          left: 14px;
+        }
+        input:nth-child(4) {
+          position: absolute;
+          top: 68px;
+          left: 14px;
+        }
+        button {
+          width: 313px;
+          height: 34px;
+          border: 0;
+          color: white;
+          position: absolute;
+          outline: none;
+          top: 118px;
+          left: 14px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          background-color: rgb(0, 151, 179);
+        }
+        hr {
+          position: relative;
+          top: 185px;
+          background-color: white;
+          height: 1px;
+          width: 60%;
+          margin: 0 auto;
+        }
+        ul {
+          padding-top: 220px;
+          position: absolute;
+          left: 12px;
+          li {
+            color: white;
+            height: 40px;
+            input {
+              position: absolute;
+              left: 76px;
+              padding-left: 10%;
+              color: white;
+              width: 210px;
+              height: 25px;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 5px;
+              border: 1px white solid;
+            }
+          }
+        }
+        button:last-child {
+          position: absolute;
+          top: 480px;
+          left: 50%;
+          margin-left: -75px;
+          width: 150px;
+          height: 30px;
+        }
+      }
+
+    }
+  }
+  //比特币矿机商城
+  .yh-btbkjsc-section{
+    .yh-btbkjsc-section-tb {
+      background-color: black;
+      height: 49px;
+      line-height: 49px;
+      li {
+        text-align: center;
+        color: rgb(127,127,127);
+        width: 16.66666%;
+        font-size: 12px;
+        float: left;
+      }
+      //头部HOVER样式
+      li.tb-active{
+        color: rgb(255,188,28);
+      }
+      li:last-child{
+        img{
+          width: 15px;
+        }
+      }
+    }
+    .tab-btbkjsc-cpfl,
+    .tab-btbkjsc-fjsc,
+    .tab-btbkjsc-wddd,
+    .tab-btbkjsc-zxzx,
+    .tab-btbkjsc-sjrz{
+      display: none;
+    }
+    //比特币矿机商城产品分类
+    .tab-btbkjsc-cpfl{
+      .tab-btbkjsc-cpfl-sp{
+        ul{
+          margin: 16px;
+          li{
+            margin-left: 2%;
+            text-align: center;
+            margin-bottom: 10px;
+            float: left;
+            width: 47.5%;
+            background-color: rgba(255,255,255,0.14);
+            img{
+              width: 100%;
+              margin-bottom: 7px;
+            }
+            span{
+              display: inline-block;
+              width: 100%;
+              text-align: left;
+              position: relative;
+              margin: 0 9px;
+              color: white;
+              font-size: 10px;
+              color: rgb(192,192,192);
+            }
+            span:nth-child(2){
+              color: white;
+              font-size: 13px;
+            }
+            span:last-child{
+              margin: 0 0 7px 0;
+              padding: 0 0 7px 9px;;
+              width: 100%;
+              float: left;
+              font-size: 13px;
+              color: rgb(255,188,28);
+              line-height: 20px;
+              a{
+                position: absolute;
+                top: 50%;
+                right: 9px;
+                transform: translateY(-50%);
+                margin-top: -3.5px;
+                text-align: center;
+                line-height: 15px;
+                font-size: 10px;
+                display: block;
+                color: black;
+                width: 35px;
+                height: 15px;
+                background-color: rgb(255,188,28);
+              }
+              .tab-btbkjsc-kjsc{
+                position: absolute;
+                right: -3px !important;
+                width: 75px;
+                background-color: transparent;
+                color: rgb(192,192,192);
+                white-space: nowrap;
+                text-overflow:ellipsis;
+                overflow:hidden;
+              }
+            }
+          }
+          li:last-child{
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+    //比特币矿机商城附近商城
+    .tab-btbkjsc-fjsc{
+      .tab-btbkjsc-fjsc-sp{
+        ul{
+          margin: 16px;
+          li{
+            margin-left: 2%;
+            text-align: center;
+            margin-bottom: 10px;
+            float: left;
+            width: 47.5%;
+            background-color: rgba(255,255,255,0.14);
+            img{
+              width: 100%;
+              margin-bottom: 7px;
+            }
+            span{
+              display: inline-block;
+              width: 90%;
+              text-align: left;
+              position: relative;
+              margin: 0 9px;
+              color: white;
+              font-size: 10px;
+              color: rgb(192,192,192);
+            }
+            span:nth-child(2){
+              color: white;
+              font-size: 13px;
+            }
+            span:last-child{
+              margin: 0 0 7px 0;
+              padding: 0 0 7px 9px;;
+              width: 100%;
+              float: left;
+              font-size: 13px;
+              color: rgb(255,188,28);
+              line-height: 20px;
+              a{
+                position: absolute;
+                top: 50%;
+                right: 9px;
+                transform: translateY(-50%);
+                margin-top: -3.5px;
+                text-align: center;
+                line-height: 15px;
+                font-size: 10px;
+                display: block;
+                color: black;
+                width: 35px;
+                height: 15px;
+                background-color: rgb(255,188,28);
+              }
+            }
+          }
+          li:last-child{
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+    //比特币矿机商城我的订单
+    .tab-btbkjsc-wddd{
+
+      ul{
+        width: 345px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 32px;
+        background-color: rgba(255,255,255,0.16);
+        color: white;
+        li{
+          position: relative;
+          padding: 0 12px;
+          width: 100%;
+          font-size: 14px;
+          height: 42px;
+          line-height: 42px;
+          border-bottom: 1px rgb(213,213,213) solid;
+          i{
+            position: absolute;
+            left: 30%;
+            font-size: 12px;
+          }
+        }
+        li:last-child{
+          border-bottom: 0;
+        }
+      }
+    }
+    //比特币矿机商城最新资讯
+    .tab-btbkjsc-zxzx{
+      .tab-btbkjsc-zxzx-sp{
+        li{
+          margin: 0;
+          height: 89px;
+          padding: 0 14px 0 19px;
+          background-color: rgba(255,255,255,0.16);
+          a{
+            position: relative;
+            top:15px;
+            display: block;
+            span{
+              display: block;
+              color: white;
+              font-size: 12px;
+              width: 166px;
+            }
+            span:nth-child(3){
+             color: rgb(153,153,153);
+              position: absolute;
+              top:48px;
+              left: 0px;
+            }
+            img{
+              position: absolute;
+              top:0;
+              right: 0;
+              width: 68px;
+            }
+          }
+        }
+        li:first-child{
+          background-color: rgba(30,33,38,0.64);
+        }
+        li:nth-child(3){
+          background-color: rgba(30,33,38,0.64);
+        }
+      }
+    }
+    //比特币矿机商城商家入驻
+    .tab-btbkjsc-sjrz{
+      ul{
+        border-radius: 10px;
+        width: 345px;
+        height: 620px;
+        margin: 32px auto 80px;
+        background-color: rgba(255,255,255,0.3);
+        li{
+          width: 90%;
+          margin: 0 auto;
+          line-height: 3;
+          span{
+            font-size: 13px;
+            color: white;
+            display: block;
+          }
+          input:nth-child(2){
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 305px;
+            height: 27px;
+            font-size: 12px;
+            padding: 0 10px;
+            color: white;
+            border: 1px rgb(238,238,238) solid;
+            background-color: transparent;
+          }
+          label{
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            i{
+              font-size: 13px;
+              margin-left: 10px;
+            }
+            input[type="radio"]{
+              color: white ;
+              width: 12px;
+              height: 12px;
+            }
+          }
+          button{
+            width: 68px;
+            height: 68px;
+            line-height: 68px;
+            border-radius: 5px;
+            i{
+              text-align: center;
+              font-size: 50px;
+              font-weight: 600;
+              color: black;
+            }
+          }
+        }
+        li:nth-child(5){
+          color: white;
+       }
+        li:first-child{
+          padding-top: 34px;
+        }
+        li:last-child{
+          button{
+            display: block;
+            margin: 40px auto 0;
+            border: 0;
+            color: white;
+            width: 266px;
+            height: 35px;
+            line-height: 35px;
+            background-color: rgb(244,180,28);
+          }
+        }
+      }
+    }
+  }
+  //个人中心
+  .yh-grzx-section{
+      margin-bottom: 50px;
+    .yh-grzx-section-one{
+      height: 121px;
+      background-color: rgba(0,0,0,0.68);
+      img{
+        float: left;
+        margin: 14px 0 42px 30px;
+        padding: 2px;
+        border: 1px white solid;
+        border-radius: 50%;
+      }
+      ul{
+        float: left;
+        margin:  25px 0 40px 12px;
+        line-height: 1.5;
+        li:nth-child(1){
+          font-size: 16px;
+          color: white;
+          span{
+            font-size: 11px;
+            color: rgb(227,171,36);
+          }
+        }
+        li{
+          font-size: 13px;
+          color: rgb(153,153,153);
+        }
+      }
+      a{
+        margin-top: 48px;
+        text-align: center;
+        color: rgb(244,244,244);
+        float: right;
+        display: block;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        background: url("../images/fx.png");
+      }
+    }
+    .yh-grzx-section-two{
+      height: 603px;
+      background-color: rgba(30,34,39,0.64);
+      padding-top: 18px;
+      a{
+        margin-bottom: 22px;
+        text-align: center;
+        display: block;
+        float: left;
+        width: 33%;
+        span{
+          font-size: 13px;
+          color: rgb(164,164,164);
+          display:block;
+        }
+      }
+    }
+  }
+  //交易管理
+  .yh-jygl-section {
+    color: white;
+    font-size: 15px;
+
+    .tab_jygl {
+      height: 24px;
+      margin: 18px auto;
+      li {
+        float: left;
+        margin-left: 7%;
+      }
+      //头部HOVER样式
+      li.tb-active {
+        color: white;
+        border-bottom: 2px white solid;
+      }
+      li:first-child {
+        margin-left: 5%;
+      }
+    }
+    .tab_jygl_wrap {
+      div {
+        display: none;
+      }
+      //求购列表
+      .tab_gh_qglb{
+        height: 352px;
+        background-color: rgba(255,255,255,0.16);
+        ul{
+          line-height: 2;
+          margin: 0 auto;
+          padding-top: 19px;
+          li{
+            padding: 0 8%;
+            position: relative;
+            font-size: 12px;
+            color: white;
+            height: 38px;
+            line-height: 38px;
+            border-bottom: 1px rgb(135,135,135) solid;
+            span{
+              position: absolute;
+              right: 48px;
+            }
+          }
+          li:last-child{
+            span{
+              position: absolute;
+              right: 31px;
+            }
+          }
+        }
+        button{
+          border-radius: 15px;
+          border: 0;
+          outline: none;
+          margin-top: 37px;
+          width: 345px;
+          height: 44px;
+          background-color: rgb(102,102,102);
+          position: relative;
+          left: 50%;
+          margin-left: -172.5px;
+          color: white;
+        }
+      }
+      //出售列表
+      .tab_gh_cslb{
+        height: 352px;
+        background-color: rgba(255,255,255,0.16);
+        ul{
+          line-height: 2;
+          margin: 0 auto;
+          padding-top: 19px;
+          li{
+            padding: 0 8%;
+            position: relative;
+            font-size: 12px;
+            color: white;
+            height: 38px;
+            line-height: 38px;
+            border-bottom: 1px rgb(135,135,135) solid;
+            span{
+              position: absolute;
+              right: 48px;
+            }
+          }
+          li:last-child{
+            span{
+              position: absolute;
+              right: 31px;
+            }
+          }
+        }
+        button{
+          border-radius: 15px;
+          border: 0;
+          outline: none;
+          margin-top: 37px;
+          width: 345px;
+          height: 44px;
+          background-color: rgb(227,171,36);
+          position: relative;
+          left: 50%;
+          margin-left: -172.5px;
+          color: white;
+        }
+      }
+      //交易列表
+      .tab_gh_jylb{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-color: rgba(255,255,255,0.16);
+        .sczfpz{
+          display: inline-block;
+          font-size: 12px;
+          margin:15px 0 15px 20px;
+        }
+        #chooseImage{
+          position: relative;
+          left: 50%;
+          width: 200px;
+          transform: translateX(-50%);
+        }
+        #cropedBigImg{
+          display: block;
+          margin: 30px auto 10px;
+        }
+        ul{
+          line-height: 2;
+          margin: 0 auto;
+          padding-top: 0!important;
+          li{
+            padding: 0 8%;
+            position: relative;
+            font-size: 12px;
+            color: white;
+            height: 38px;
+            line-height: 38px;
+            border-bottom: 1px rgb(135,135,135) solid;
+            span{
+              position: absolute;
+              right: 28px;
+            }
+          }
+          li:nth-child(3){
+            span{
+              right: 48px;
+            }
+          }
+          li:nth-child(4){
+            span{
+              right: 48px;
+            }
+          }
+        }
+        button{
+          border-radius: 15px;
+          border: 0;
+          outline: none;
+          margin-top: 37px;
+          width: 105px;
+          height: 44px;
+          background-color: rgb(102,102,102);
+          color: white;
+        }
+        button:nth-child(5){
+          background-color: #1c7430;
+          margin-left: 7%;
+        }
+        button:nth-child(7){
+          background-color: #761c19;
+        }
+
+        h6{
+          border-top: 1px rgb(135,135,135) solid;
+          margin-top: 48px;
+          font-size: 12px;
+          padding-left: 16px;
+          padding-top: 10px;
+        }
+        p{
+          font-size: 10px;
+          padding: 8px 26px 0 18px;
+          text-indent:2em;
+        }
+      }
+
+      //已完成列表
+      .tab_gh_ywclb{
+        .tab_gh_ywclb_top{
+            height: 23px;
+          line-height: 23px;
+            background-color: rgba(245,245,245,0.61);
+        }
+        .tab_gh_ywclb_top > li{
+              color: rgb(14,14,14);
+              font-size: 10px;
+              text-align: center;
+              width: 25%;
+              float: left;
+            }
+
+        .tab_gh_ywclb1 {
+          background-color: rgba(245, 245, 245, 0.16);
+          li{
+            background-color: rgba(153,153,153,0.21);
+            border-bottom: 1px rgba(153,153,153,0.16) solid;
+          span{
+            text-align: center;
+          }
+          }
+        }
+        .tab_gh_ywclb1 > li{
+            min-height: 31px;
+            line-height: 31px;
+            width: 100%;
+            font-size: 10px;
+            float: left;
+            border-bottom: ;
+          span{
+              width: 24%;
+              display: inline-block;
+            }
+          }
+        .tab_gh_ywclb3 > ul li:first-child{
+          border: 0;
+          padding-left: 30px;
+        }
+        .tab_gh_ywclb3 > ul li{
+          border: 0;
+          padding-left: 50px;
+        }
+
+      }
+    }
+  }
+
+  //工会管理
+  .yh-ghgl-section {
+    color: white;
+    font-size: 15px;
+
+    .tab_grzl {
+      height: 24px;
+      margin: 18px auto;
+      li {
+        float: left;
+        margin-left: 20%;
+      }
+      //头部HOVER样式
+      li.tb-active {
+        color: white;
+        border-bottom: 2px white solid;
+      }
+      li:first-child {
+        margin-left: 5%;
+      }
+    }
+    .tab_grzl_wrap {
+      div {
+        display: none;
+      }
+      //我的工会
+      .tab_gh_wdgh{
+        height: 352px;
+        background-color: rgba(255,255,255,0.16);
+        ul{
+          line-height: 2;
+          width: 90%;
+          margin: 0 auto;
+          padding-top: 19px;
+          li:first-child{
+            color: white;
+            font-size: 11px;
+          }
+          li{
+            font-size: 10px;
+            color: rgb(153,153,153);
+          }
+        }
+      }
+      //矿机网络
+      .tab_gh_kjwl{
+        ul{
+          margin: 0 auto;
+          background-color: rgba(255,255,255,0.16);
+          li:first-child{
+            height: 31px;
+            line-height: 31px;
+            color: rgb(14,14,14);
+            padding: 0 5%;
+            background-color: rgba(245,245,245,0.61);
+            span{
+              font-size: 11px;
+              display: inline-block;
+              width: 30%;
+              text-align: center;
+            }
+          }
+          li{
+            height: 31px;
+            line-height: 31px;
+            padding: 0 5%;
+            color: rgb(14,14,14);
+            background-color: rgba(245,245,245,0.16);
+            span{
+              font-size: 11px;
+              display: inline-block;
+              width: 30%;
+              text-align: center;
+            }
+          }
+        }
+      }
+      //所属工会
+      .tab_gh_ssgh{
+        height: 325px;
+        background-color: rgba(255,255,255,0.16);
+        ul{
+          font-size: 12px;
+          li{
+            padding: 0 5%;
+            height: 38px;
+            line-height: 38px;
+            border-bottom:1px rgb(135,135,135) solid;
+            span{
+              float: right;
+            }
+          }
+          li:last-child{
+            height: 103px;
+            line-height: 1.5;
+            padding: 15px 25px 0 18px;
+          }
+        }
+      }
+    }
+  }
+
+  //矿机详情
+  .yh-kjxq-section {
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    //算力
+    .yh-kjxq-section-one{
+      margin-top: 30px;
+      color: white;
+      ul{
+        margin-left: 50%;
+        font-size: 12px;
+      }
+    }
+    //CSS下kjxq.css 为SVG样式 此处仅为SVG居中
+    .yh-kjxq-section-two{
+      margin-top: 50px;
+      width: 100%;
+      height: 375px;
+      ul{
+        li{
+          color: #c59820 !important;
+        }
+        position: absolute;
+        top:60px;
+        width: 100%;
+        @keyframes myfirst1
+        {
+            0%   {width: 47px; height: 47px; padding: 2px; left:114px; top:19px;}
+            25%  {width: 49px; height: 49px; padding: 4px; left:124px; top:25px;}
+            50%  {width: 51px; height: 51px; padding: 6px; left:114px; top:22px;}
+            75%  {width: 53px; height: 53px; padding: 4px; left:124px; top:24px;}
+            100% {width: 55px; height: 55px; padding: 2px; left:114px; top:19px;}
+        }
+        @keyframes myfirst2
+        {
+          0%   {left:23px; top:38px;}
+          25%  {left:33px; top:25px;}
+          50%  {left:23px; top:38px;}
+          75%  {left:33px; top:25px;}
+          100% { left:23px; top:38px;}
+        }
+        @keyframes myfirst3
+        {
+          0%   {left:94px; top:85px;}
+          25%  {left:104px; top:95px;}
+          50%  {left:94px; top:85px;}
+          75%  {left:104px; top:95px;}
+          100% { left:94px; top:85px;}
+        }
+        @keyframes myfirst4
+        {
+          0%   {left:178px; top:107px;}
+          25%  {left:188px; top:97px;}
+          50%  {left:178px; top:107px;}
+          75%  {left:188px; top:97px;}
+          100% { left:178px; top:107px;}
+        }
+        @keyframes myfirst5
+        {
+          0%   {left:270px; top:103px;}
+          25%  {left:280px; top:113px;}
+          50%  {left:270px; top:103px;}
+          75%  {left:280px; top:113px;}
+          100% { left:270px; top:103px;}
+        }
+        @keyframes myfirst6
+        {
+          0%   {left:41px; top:158px;}
+          25%  {left:51px; top:148px;}
+          50%  {left:41px; top:158px;}
+          75%  {left:51px; top:148px;}
+          100% { left:41px; top:158px;}
+        }
+        @keyframes myfirst7
+        {
+          0%   {left:121px; top:158px;}
+          25%  {left:111px; top:148px;}
+          50%  {left:121px; top:158px;}
+          75%  {left:111px; top:148px;}
+          100% { left:121px; top:158px;}
+        }
+        @keyframes myfirst8
+        {
+          0%   {left:206px; top:185px;}
+          25%  {left:216px; top:175px;}
+          50%  {left:206px; top:185px;}
+          75%  {left:216px; top:175px;}
+          100% { left:206px; top:185px;}
+        }
+        @keyframes myfirst9
+        {
+          0%   {left:273px; top:207px;}
+          25%  {left:263px; top:197px;}
+          50%  {left:273px; top:207px;}
+          75%  {left:263px; top:197px;}
+          100% { left:273px; top:207px;}
+        }
+        @keyframes myfirst10
+        {
+          0%   {left:53px; top:253px;}
+          25%  {left:43px; top:243px;}
+          50%  {left:53px; top:253px;}
+          75%  {left:43px; top:243px;}
+          100% { left:53px; top:253px;}
+        }
+        @keyframes myfirst11
+        {
+          0%   {left:149px; top:241px;}
+          25%  {left:159px; top:231px;}
+          50%  {left:149px; top:241px;}
+          75%  {left:159px; top:231px;}
+          100% { left:149px; top:241px;}
+        }
+        @keyframes myfirst12
+        {
+          0%   {left:214px; top:287px;}
+          25%  {left:204px; top:277px;}
+          50%  {left:214px; top:287px;}
+          75%  {left:204px; top:277px;}
+          100% { left:214px; top:287px;}
+        }
+        @keyframes myfirst13
+        {
+          0%   {left:247px; top:336px;}
+          25%  {left:237px; top:346px;}
+          50%  {left:247px; top:336px;}
+          75%  {left:237px; top:346px;}
+          100% { left:247px; top:336px;}
+        }
+        @keyframes myfirst14
+        {
+          0%   {left:114px; top:333px;}
+          25%  {left:124px; top:343px;}
+          50%  {left:114px; top:333px;}
+          75%  {left:124px; top:343px;}
+          100% { left:114px; top:333px;}
+        }
+        @keyframes myfirst15
+        {
+          0%   {left:67px; top:381px;}
+          25%  {left:77px; top:371px;}
+          50%  {left:67px; top:381px;}
+          75%  {left:77px; top:371px;}
+          100% { left:67px; top:381px;}
+        }
+        @keyframes myfirst16
+        {
+          0%   {left:223px; top:416px;}
+          25%  {left:233px; top:406px;}
+          50%  {left:223px; top:416px;}
+          75%  {left:233px; top:406px;}
+          100% { left:223px; top:416px;}
+        }
+        @keyframes myfirst17
+        {
+          0%   {left:323px; top:376px;}
+          25%  {left:333px; top:366px;}
+          50%  {left:323px; top:376px;}
+          75%  {left:333px; top:366px;}
+          100% { left:323px; top:376px;}
+        }
+        li{
+          padding-top: 3px;
+          text-align: center;
+          width: 47px;
+          height: 47px;
+          border: 1px rgba(161,196,253,0.5) solid;
+          border-radius: 50%;
+          font-size: 12px;
+          color: white;
+          background-color: rgba(161,196,253,0.25);
+        }
+        //li:hover{
+        //  width: 57px;
+        //  height: 57px;
+        //  padding: 8px;
+        //}
+        li:nth-child(1){
+          position: absolute;
+          top: 19px;
+          left: 114px;
+          animation: myfirst1 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst1 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst1 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst1 5s linear 2s infinite alternate;
+         }
+        li:nth-child(2){
+          position: absolute;
+          top: 38px;
+          left: 23px;
+          animation: myfirst2 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst2 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst2 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst2 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(3){
+          position: absolute;
+          top: 85px;
+          left: 94px;
+          animation: myfirst3 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst3 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst3 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst3 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(4){
+          position: absolute;
+          top: 107px;
+          left: 178px;
+          animation: myfirst4 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst4 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst4 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst4 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(5){
+          position: absolute;
+          top: 103px;
+          left: 270px;
+          animation: myfirst5 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst5 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst5 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst5 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(6){
+          position: absolute;
+          top: 158px;
+          left: 41px;
+          animation: myfirst6 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst6 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst6 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst6 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(7){
+          position: absolute;
+          top: 158px;
+          left: 121px;
+          animation: myfirst7 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst7 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst7 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst7 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(8){
+          position: absolute;
+          top: 185px;
+          left: 206px;
+          animation: myfirst8 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst8 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst8 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst8 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(9){
+          position: absolute;
+          top: 207px;
+          left: 273px;
+          animation: myfirst9 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst9 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst9 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst9 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(10){
+          position: absolute;
+          top: 253px;
+          left: 53px;
+          animation: myfirst10 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst10 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst10 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst10 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(11){
+          position: absolute;
+          top: 241px;
+          left: 149px;
+          animation: myfirst11 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst11 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst11 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst11 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(12){
+          position: absolute;
+          top: 287px;
+          left: 214px;
+          animation: myfirst12 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst12 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst12 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst12 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(13){
+          position: absolute;
+          top: 336px;
+          left: 247px;
+          animation: myfirst13 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst13 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst13 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst13 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(14){
+          position: absolute;
+          top: 333px;
+          left: 114px;
+          animation: myfirst14 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst14 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst14 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst14 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(15){
+          position: absolute;
+          top: 381px;
+          left: 67px;
+          animation: myfirst15 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst15 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst15 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst15 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(16){
+          position: absolute;
+          top: 416px;
+          left: 223px;
+          animation: myfirst16 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst16 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst16 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst16 5s linear 2s infinite alternate;
+
+        }
+        li:nth-child(17){
+          position: absolute;
+          top: 376px;
+          left: 323px;
+          animation: myfirst17 5s linear 2s infinite alternate;
+          /* Firefox: */
+          -moz-animation: myfirst17 5s linear 2s infinite alternate;
+          /* Safari 和 Chrome: */
+          -webkit-animation: myfirst17 5s linear 2s infinite alternate;
+          /* Opera: */
+          -o-animation: myfirst17 5s linear 2s infinite alternate;
+
+        }
+      }
+      //.svg{
+      //  margin: 0 auto;
+      //  height: 400px;
+      //  img{
+      //    margin-top: -60px;
+      //    width: 200px;
+      //  }
+      //}
+    }
+    .yh-kjxq-section-three{
+      margin-left: 5%;
+      margin-bottom: 30px;
+      span{
+        margin-left: 3%;
+        text-align: center;
+        display: inline-block;
+        width: 60px;
+        font-size: 12px;
+        color: white;
+      }
+    }
+    //矿机详情
+    .tab_kjxq {
+      height: 24px;
+      margin: 18px auto;
+      li {
+        float: left;
+        margin-left: 12%;
+      }
+      //头部HOVER样式
+      li.tb-active {
+        color: white;
+        border-bottom: 2px rgb(21, 83, 145) solid;
+      }
+      li:first-child {
+        margin-left: 5%;
+      }
+    }
+    .tab_kjxq_wrap {
+      margin-bottom: 30px;
+      div {
+        display: none;
+      }
+      //微型
+      .tab_gh_wx {
+        ul {
+          li {
+            padding: 0 5%;
+            color: rgb(153, 153, 153);
+            font-size: 10px;
+            line-height: 30px;
+            height: 30px;
+            border-bottom: 1px rgb(159,156,151) solid;
+            span{
+              display: inline-block;
+              width: 22%;
+              color: white;
+            }
+            span:nth-child(2){
+              width: 16%;
+            }
+            span:nth-child(3){
+              width: 25%;
+            }
+            button{
+              border-radius: 3px;
+              border: 0;
+              outline: none;
+              background-color: rgb(255,188,28);
+              font-size: 12px;
+              width: 40px;
+              height: 15px;
+              color: white;
+              width: 10%;
+              line-height: 15px;
+              white-space:nowrap;
+            }
+          }
+        }
+      }
+      //小型
+      .tab_gh_xx {
+        ul {
+          li {
+            padding: 0 5%;
+            color: rgb(153, 153, 153);
+            font-size: 10px;
+            line-height: 30px;
+            height: 30px;
+            border-bottom: 1px rgb(159,156,151) solid;
+            span{
+              display: inline-block;
+              width: 22%;
+              color: white;
+            }
+            span:nth-child(2){
+              width: 16%;
+            }
+            span:nth-child(3){
+              width: 25%;
+            }
+            button{
+              border-radius: 3px;
+              border: 0;
+              outline: none;
+              background-color: rgb(255,188,28);
+              font-size: 12px;
+              width: 40px;
+              height: 15px;
+              color: white;
+              width: 10%;
+              line-height: 15px;
+              white-space:nowrap;
+            }
+          }
+        }
+      }
+      //中型
+      .tab_gh_zx {
+        ul {
+          li {
+            padding: 0 5%;
+            color: rgb(153, 153, 153);
+            font-size: 10px;
+            line-height: 30px;
+            height: 30px;
+            border-bottom: 1px rgb(159,156,151) solid;
+            span{
+              display: inline-block;
+              width: 22%;
+              color: white;
+            }
+            span:nth-child(2){
+              width: 16%;
+            }
+            span:nth-child(3){
+              width: 25%;
+            }
+            button{
+              border-radius: 3px;
+              border: 0;
+              outline: none;
+              background-color: rgb(255,188,28);
+              font-size: 12px;
+              width: 40px;
+              height: 15px;
+              color: white;
+              width: 10%;
+              line-height: 15px;
+              white-space:nowrap;
+            }
+          }
+        }
+      }
+      //大型
+      .tab_gh_dx {
+        ul {
+          li {
+            padding: 0 5%;
+            color: rgb(153, 153, 153);
+            font-size: 10px;
+            line-height: 30px;
+            height: 30px;
+            border-bottom: 1px rgb(159,156,151) solid;
+            span{
+              display: inline-block;
+              width: 22%;
+              color: white;
+            }
+            span:nth-child(2){
+              width: 16%;
+            }
+            span:nth-child(3){
+              width: 25%;
+            }
+            button{
+              border-radius: 3px;
+              border: 0;
+              outline: none;
+              background-color: rgb(255,188,28);
+              font-size: 12px;
+              width: 40px;
+              height: 15px;
+              color: white;
+              width: 10%;
+              line-height: 15px;
+              white-space:nowrap;
+            }
+          }
+        }
+      }
+      //巨型
+      .tab_gh_jx {
+        ul {
+          li {
+            padding: 0 5%;
+            color: rgb(153, 153, 153);
+            font-size: 10px;
+            line-height: 30px;
+            height: 30px;
+            border-bottom: 1px rgb(159,156,151) solid;
+            span{
+              display: inline-block;
+              width: 22%;
+              color: white;
+            }
+            span:nth-child(2){
+              width: 16%;
+            }
+            span:nth-child(3){
+              width: 25%;
+            }
+            button{
+              border-radius: 3px;
+              border: 0;
+              outline: none;
+              background-color: rgb(255,188,28);
+              font-size: 12px;
+              width: 40px;
+              height: 15px;
+              color: white;
+              width: 10%;
+              line-height: 15px;
+              white-space:nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  .yh-footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    ul{
+      width: 100%;
+      height: 49px;
+      background-color: black;
+      //background-color: rgba(255,255,255,0.18);
+      li{
+        position: relative;
+        top:6px;
+        line-height: 1;
+        text-align: center;
+        color: white;
+        width: 25%;
+        float: left;
+        i{
+          font-size: 25px;
+        }
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+}

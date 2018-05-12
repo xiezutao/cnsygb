@@ -1,0 +1,381 @@
+<!-- 
+    技术支持：深圳市小草互联网科技有限公司，专注前端外包、美工外包。
+    联系电话：13823771028
+    淘宝店：https://shop269081662.taobao.com
+    欢迎联系QQ/微信：364243821；并对我们的产品提出宝贵的意见和建议。
+    为您服务，我们不胜荣幸！
+    1.  根目录文件说明：
+        css | scripts | images | xchl（存放html文件）| 页面（最终存放设计界面图片）；
+    2.  所有icon图标一律引用阿里iconfont的线上图标。
+        ps：客户如需转交iconfont项目所有权，请与项目交付3天内联系我司。
+
+    editer：谢滔
+    edittime：2018年4月8日10:32:04
+    文件修改记录：
+    1. 2018年xx月xx日xx:xx:xx  修复bug，轮播图切换异常
+    2. ****
+ -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- 设置文档宽度、是否缩放 -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!-- 优先使用IE最新版本和Chrome -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>比特币矿机商城</title>
+        <!-- 关键字 -->
+        <meta name="keywords" content="">
+        <!-- 描述 -->
+        <meta name="description" content="">
+
+        <!--[if lte IE 8]>
+        <p style="background:#000;text-align: center;color:#fff;font-size: 16px; line-height: 25px;">你的浏览器太老了，请到<a href="http://browsehappy.com" style="color:#ddd">这里</a>更新，以获取最佳的体验</p>
+        <![endif]-->
+        <!--[if lte IE 7]>
+        <p style="background:#000;text-align: center;color:#fff;font-size: 16px; line-height: 25px;">你的浏览器太老了，请到<a href="http://browsehappy.com" style="color:#ddd">这里</a>更新，以获取最佳的体验</p>
+        <![endif]-->
+        <!--[if lte IE 6]>
+        <p style="background:#000;text-align: center;color:#fff;font-size: 16px; line-height: 25px;">你的浏览器太老了，请到<a href="http://browsehappy.com" style="color:#ddd">这里</a>更新，以获取最佳的体验</p>
+        <![endif]-->
+        <!-- 360使用Google Chrome Frame -->
+		<meta name="renderer" content="webkit">
+		<!-- 百度禁止转码 -->
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<!-- 定义网页搜索引擎索引方式 -->
+		<meta name="robots" content="index,follow">
+		<!-- ios设备 -->
+		<!-- 添加到主屏后的标题 -->
+		<meta name="apple-mobile-web-app-title" content="标题">
+		<!-- 是否启用WebApp全屏模式 -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<!-- 设置状态栏的背景颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- Android theme-color用来控制选项卡颜色。 -->
+		<meta name="theme-color" content="#747474">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- 关闭chrome浏览器下翻译插件 -->
+		<meta name="google" value="notranslate" />
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+
+		<!-- 开始引用css -->
+		<style>
+			li:nth-child(1) a{
+				color: rgb(255,188,28);
+			}
+			canvas{
+				position:fixed;
+				top:0px;
+				left:0;
+				background:transparent;
+				z-index: -1;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_622197_pzt9o2eh8t49529.css">
+		<link rel="stylesheet" type="text/css" href="../css/xchl.css">
+		<link rel="stylesheet/less" type="text/css" href="../css/xchl.less">
+		<!-- 开始引用js -->
+		<script src="../scripts/less.min.js"></script>
+		<script src="../scripts/jquery/jquery.min.js"></script>
+	</head>
+    <body>
+	<!--CSS3画布背景-->
+	<canvas id="c">
+	</canvas>
+        <!-- 开始 头部 -->
+        <header>
+        </header>
+        <!-- 头部 结束 -->
+        <!-- 开始 身体 -->
+        <section>
+			<div class="yh-btbkjsc-section">
+				<ul class="yh-btbkjsc-section-tb" id="tab_tb">
+					<li class="tb-active">产品分类</li>
+					<li>附近商城</li>
+					<li>我的订单</li>
+					<li>最新资讯</li>
+					<li>商家入驻</li>
+					<li><img src="../images/touxiang.png" alt="" title="" /></li>
+				</ul>
+				<div id="tab_wrap">
+					<!-- 比特币商城 产品分类  -->
+					<div class="tab-btbkjsc-cpfl" style="display: block">
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<div class="tab-btbkjsc-cpfl-sp">
+							<ul>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>产量/小时：<i>0.0152778</i></span>
+									<span>运行周期：<i>720小时</i></span>
+									<span>价格 : <i>10GSYB</i><a>购买</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>产量/小时：<i>0.0152778</i></span>
+									<span>运行周期：<i>720小时</i></span>
+									<span>价格 : <i>10GSYB</i><a>购买</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>产量/小时：<i>0.0152778</i></span>
+									<span>运行周期：<i>720小时</i></span>
+									<span>价格 : <i>10GSYB</i><a>购买</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>产量/小时：<i>0.0152778</i></span>
+									<span>运行周期：<i>720小时</i></span>
+									<span>价格 : <i>10GSYB</i><a>购买</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>产量/小时：<i>0.0152778</i></span>
+									<span>运行周期：<i>720小时</i></span>
+									<span>价格 : <i>10GSYB</i><a>购买</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>产量/小时：<i>0.0152778</i></span>
+									<span>运行周期：<i>720小时</i></span>
+									<span>价格 : <i>10GSYB</i><a>购买</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 比特币商城 附近商城  -->
+					<div class="tab-btbkjsc-fjsc">
+						<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel1">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<div class="tab-btbkjsc-fjsc-sp">
+							<ul>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>著名的技术专家和连续创业企业家</span>
+									<span>深圳龙岗<a>查看</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>著名的技术专家和连续创业企业家</span>
+									<span>深圳龙岗<a>查看</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>著名的技术专家和连续创业企业家</span>
+									<span>深圳龙岗<a>查看</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>著名的技术专家和连续创业企业家</span>
+									<span>深圳龙岗<a>查看</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>著名的技术专家和连续创业企业家</span>
+									<span>深圳龙岗<a>查看</a></span>
+								</li>
+								<li>
+									<img src="../images/btbkjsc-cp.png" />
+									<span>微型云矿机</span>
+									<span>著名的技术专家和连续创业企业家</span>
+									<span>深圳龙岗<a>查看</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 比特币商城 我的订单  -->
+					<div class="tab-btbkjsc-wddd">
+						<ul>
+							<li>订单号 : <i>000</i></li>
+							<li>成交额 : <i>000</i></li>
+							<li>类型 : <i>000</i></li>
+							<li>成交价格 : <i>000</i></li>
+							<li>成交数量 : <i>000</i></li>
+							<li>成交额 : <i>000</i></li>
+							<li>成交时间 : <i>000</i></li>
+						</ul>
+					</div>
+					<!-- 比特币商城 最新资讯 -->
+					<div class="tab-btbkjsc-zxzx">
+						<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/btbkjsc-lunbo.png" alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+						<ul class="tab-btbkjsc-zxzx-sp">
+							<li>
+								<a href="#">
+									<span>SNK:首个基于区块链跨境电商
+合作平台</span><br />
+									<span>链派社区：<i>04-11 09：30</i></span>
+									<img src="../images/btbkjsc-cp.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>SNK:首个基于区块链跨境电商
+合作平台</span><br />
+									<span>链派社区：<i>04-11 09：30</i></span>
+									<img src="../images/btbkjsc-cp.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>SNK:首个基于区块链跨境电商
+合作平台</span><br />
+									<span>链派社区：<i>04-11 09：30</i></span>
+									<img src="../images/btbkjsc-cp.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>SNK:首个基于区块链跨境电商
+合作平台</span><br />
+									<span>链派社区：<i>04-11 09：30</i></span>
+									<img src="../images/btbkjsc-cp.png" />
+								</a>
+							</li>
+						</ul>
+
+					</div>
+					<!-- 比特币商城 商家入驻 -->
+					<div class="tab-btbkjsc-sjrz">
+						<ul>
+							<li>
+								<span>姓名</span>
+								<input type="text" name="name" placeholder="请输入姓名">
+							</li>
+							<li>
+								<span>证件号码</span>
+								<input type="number" name="name" placeholder="请输入身份证号码">
+							</li>
+							<li>
+								<span>门头照</span>
+								<button><i class="iconfont icon-add"></i></button>
+							</li>
+							<li>
+								<span>经营许可证</span>
+								<button><i class="iconfont icon-add"></i></button>
+							</li>
+							<li>
+								<span>所需GSYB能量</span>
+								<label>
+									<input type="radio" name="sex" value="个人" /><i>50</i></label>
+								<label>
+									<input type="radio" checked="checked" name="sex" value="公司" /><i>100</i></label>
+							</li>
+							<li><button>立即进驻</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </section>
+        <!-- 身体 结束 -->
+		<!-- 开始 脚注  -->
+		<nav id="index-nav">
+			<script>
+                $("#index-nav").load("../public/nav.html");
+			</script>
+		</nav>
+		<!-- 脚注 结束 -->
+        <!-- 开始引用js -->
+		<script src="../scripts/jquery/jquery.min.js"></script>
+		<script src="../scripts/jquery_bootstrap/bootstrap.min.js"></script>
+		<script src="../scripts/less.min.js"></script>
+		<script src="../scripts/index.js"></script>
+		<script src="../scripts/bg.js"></script>
+    </body>
+</html>

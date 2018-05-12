@@ -1,0 +1,116 @@
+html,body, h3, h4, ul{
+	margin:0;
+	padding:0
+}
+.main{
+	width:100%;
+	height:1200px;;
+}
+header > button{
+	height:30px;
+	line-height:30px;
+	background-color:#ddd;
+	color:#000;
+	border-radius:5px;
+	border:none;
+	outline:none;
+	margin:20px;
+}
+.canvi-top{
+	width:100%;
+	height:100px;
+	background:#333739;
+	position:relative;
+}
+.canvi-top img{
+	width:55px;
+	height:50px;
+	margin:25px 15px 25px 25px;
+	border-radius:50%;
+	float:left;
+}
+.canvi-text{
+	color:#fff;
+	float:left;
+}
+.canvi-text h4{
+	margin-top:30px;
+}
+.canvi-text h6{
+	margin-top:10px;
+}
+.accordion {
+	width: 100%;
+	background: transparent;
+}
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 17px;
+	color: rgb(102,102,102);
+	font-size: 10px;
+	
+	background: #fff;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.accordion .link a{
+	text-decoration: none;
+}
+.accordion li:last-child .link {
+	
+	border-bottom: 0;
+}
+.accordion li i {
+	position: absolute;
+	top: 3px;
+	right: 12px;
+	font-size: 14px;
+	color: #595959;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+
+
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.submenu {
+	display: none;
+	background: transparent;
+	padding: 15px;
+	color: rgb(237,224,224);
+	font-size: 10px;
+}
+.submenu li{
+	padding: 1px 0;
+}
+ li p{
+ 	text-align: center;
+ 	color: rgb(153,153,153);
+ 	font-size: 10px;
+	height: 32px;
+	line-height: 32px;
+	background: white;
+	border-top:1px solid rgb(213,213,213) ;
+}
+
+
+
+

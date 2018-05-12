@@ -1,0 +1,82 @@
+/*nav 导航公共模块样式*/
+.nav-wrap {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  max-width: 1024px;
+  width: 100%;
+  height: 49px;
+  font-family: "PingFang-SC-Medium";
+  font-size: 12px;
+  color: white;
+  letter-spacing: 2px;
+  background-color: rgba(255,255,255,0.3);
+}
+.nav-wrap > ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  margin: 0;
+}
+.nav-wrap > ul > li {
+  text-align: center;
+}
+/*.nav-wrap > ul > li p{*/
+  /*color: white;*/
+/*}*/
+.nav-wrap > ul > li i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 5px 0 2px 0;
+}
+.nav-wrap > ul > li:nth-child(1) i {
+  background: url(../../images/nav-1.png) no-repeat center/contain;
+}
+.nav-wrap > ul > li:nth-child(2) i {
+  background: url(../../images/nav-2.png) no-repeat center/contain;
+}
+.nav-wrap > ul > li:nth-child(3) i {
+  background: url(../../images/nav-3.png) no-repeat center/contain;
+}
+.nav-wrap > ul > li:nth-child(4) i {
+  background: url(../../images/nav-4.png) no-repeat center/contain;
+}
+.nav-wrap > ul > li:nth-child(5) i {
+  background: url(../../images/nav-5.png) no-repeat center/contain;
+}
+.nav-wrap > ul > li p {
+  line-height: 12px;
+  font-size: 12px;
+  color: white;
+}
+.nav-wrap > ul > li a:hover {
+  color: #1e8b9e;
+}
+.nav-wrap > ul > li p:hover {
+  color: #1e8b9e;
+}
+/*激活导航样式*/
+/*.index-wrap .nav-wrap ul li:nth-child(1) a {*/
+  /*color: #1e8b9e !important;*/
+/*}*/
+/*.deal-wrap .nav-wrap ul li:nth-child(2) a {*/
+  /*color: #1e8b9e;*/
+/*}*/
+/*.star-wrap .nav-wrap ul li:nth-child(3) a {*/
+  /*color: #1e8b9e;*/
+/*}*/
+/*.news-wrap .nav-wrap ul li:nth-child(4) a {*/
+  /*color: #1e8b9e;*/
+/*}*/
+/*.user-wrap .nav-wrap ul li:nth-child(5) a {*/
+  /*color: #1e8b9e;*/
+/*}*/
+/*适配电脑*/
+@media screen and (min-width: 1024px) {
+  .nav-wrap {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
