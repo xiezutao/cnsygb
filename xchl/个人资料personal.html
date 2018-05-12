@@ -17,7 +17,6 @@
  -->
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8">
 		<!-- 设置文档宽度、是否缩放 -->
@@ -86,6 +85,7 @@
 		<link rel="stylesheet/less" type="text/less" href="../css/index.less" />
 		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_622197_ihkqee660xcac3di.css" />
 		<!-- 开始引用js -->
+		<script src="../scripts/jquery/jquery.min.js"></script>
 		<script src="../scripts/less.min.js"></script>
 	</head>
 
@@ -117,9 +117,34 @@
 				<li class="content-data">
 					<ul>
 						<li><span>姓名：</span><input type="text" name="" id="" value="李达人" /> </li>
-						<li><span>性别：</span><input type="text" name="" id="" value="男" /> </li>
-						<li><span>国籍：</span><input type="text" name="" id="" value="中国" /> </li>
-						<li><span>身份证号：</span><input type="text" name="" id="" value="45845623698547895" /> </li>
+						<li><span>性别：</span>
+							<select>
+								<option value ="男">男</option>
+								<option value ="女">女</option>
+							</select>
+						</li>
+						<li><span>国籍：</span><input type="text" name="" value="中国" /> </li>
+						<li><span>身份证号：</span><input type="text" name="" value="45845623698547895" /> </li>
+						<li>
+							<span class="sczfpz">上传身份证正面:</span>
+
+							<form class="container" enctype="multipart/form-data" method="post" id='formBox' name="form">
+								<input type="file" id="chooseImage" name="file"/>
+								<!-- 保存用户自定义的背景图片 -->
+							</form>
+							<img id="cropedBigImg" value='custom'  data-address='' />
+							<br />
+
+							<span class="sczfpz">上传身份证反面:</span>
+							<form class="container" enctype="multipart/form-data" method="post" id='formBox' name="form">
+								<input type="file" id="chooseImage1" name="file"/>
+								<!-- 保存用户自定义的背景图片 -->
+							</form>
+							<img id="cropedBigImg1" value='custom'  data-address='' />
+							<br />
+						</li>
+
+
 					</ul>
 					
 				</li>
@@ -145,6 +170,61 @@
 		</footer>
 		<!-- 脚注 结束 -->
 		<!-- 开始引用js -->
+	<script>
+
+        // 本地显示
+        $('#chooseImage').on('change',function(){
+            var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+                fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase(),
+                src = window.URL.createObjectURL(this.files[0]); //转成可以在本地预览的格式
+
+            // 检查是否是图片
+            if( !fileFormat.match(/.png|.jpg|.jpeg/) ) {
+                error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+                return;
+            }
+
+            $('#cropedBigImg').attr('src',src);
+        });
+        // 有后台才显示
+        // $('#chooseImage').on('change',function(){
+        //     var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+        //         fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase();
+        //     // 检查是否是图片
+        //     if( !fileFormat.match(/.png|.jpg|.jpeg/) ) {
+        //         error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+        //         return;
+        //     }
+        //     $('#cropedBigImg').attr('src',filePath);
+        //     $('#loding').show();
+        // });
+        // 本地显示
+        $('#chooseImage1').on('change',function(){
+            var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+                fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase(),
+                src = window.URL.createObjectURL(this.files[0]); //转成可以在本地预览的格式
+
+            // 检查是否是图片
+            if( !fileFormat.match(/.png|.jpg|.jpeg/) ) {
+                error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+                return;
+            }
+
+            $('#cropedBigImg1').attr('src',src);
+        });
+        // 有后台才显示
+        // $('#chooseImage').on('change',function(){
+        //     var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+        //         fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase();
+        //     // 检查是否是图片
+        //     if( !fileFormat.match(/.png|.jpg|.jpeg/) ) {
+        //         error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+        //         return;
+        //     }
+        //     $('#cropedBigImg').attr('src',filePath);
+        //     $('#loding').show();
+        // });
+	</script>
 		<!--插入语言包-->
 		<script src="../scripts/jquery/jquery.min.js"></script>
 		<script src="../scripts/less.min.js" type="text/javascript"></script>

@@ -212,10 +212,26 @@ header {
 
     }
     .content-box {
-
         position: relative;
         .gathering {
             height: 278px !important;
+        }
+        .content-data:nth-child(2){
+            line-height: 2;
+            img{
+                width: 200px;
+                margin: 0 auto;
+            }
+            .container{
+                width: 60%;
+                margin: 0 auto;
+            }
+            li:nth-child(4),
+            li:nth-child(5){
+                text-align: center;
+                border: 0;
+            }
+
         }
         .content-data {
             position: absolute;
@@ -243,6 +259,9 @@ header {
                         letter-spacing: 2px;
                         border: none;
                         background: transparent;
+                    }
+                    select{
+                        color: black;
                     }
                 }
 
@@ -613,13 +632,7 @@ ul{
     }
 }
    
-#myModal{
-    .modal-dialog{
-        margin-top:300px;
-    }
-    
-    
-}
+
 }
 
 .pop-up{
@@ -628,7 +641,8 @@ ul{
     left: 50%;
     margin-left: -142px;
     margin-top: -222px;
-   
+    width: 284px;
+    height: 334px;
     background: white;
     border-radius:15px;
     color: rgb(51,51,51);
@@ -638,10 +652,8 @@ ul{
         padding: 12px;
     }
     ul{
-        border-radius: 15px;
         padding: 38px 22px 0;
         li{
-            border: none;
             line-height: 23px;
             color: rgb(51,51,51);
             zoom: 0.7;
@@ -650,13 +662,11 @@ ul{
             margin-bottom: 20px;
         }
         .content{
-            margin-bottom: 230px;
             text-indent: 26px;
             font-weight:100 !important;
         }
-        
         .btm{
-            margin: 2px auto;
+            margin: 10px auto;
             text-align: center;
         }
     }
