@@ -32,6 +32,8 @@ $(function(){
         console.log(index)
     });
 
-
+    $(".tab_gh_wdgh_one").click(function(){
+        $(".tab_gh_wdgh_two").slideToggle();
+    });
 });
 

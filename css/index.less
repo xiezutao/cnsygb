@@ -212,10 +212,26 @@ header {
 
     }
     .content-box {
-
         position: relative;
         .gathering {
             height: 278px !important;
+        }
+        .content-data:nth-child(2){
+            line-height: 2;
+            img{
+                width: 200px;
+                margin: 0 auto;
+            }
+            .container{
+                width: 60%;
+                margin: 0 auto;
+            }
+            li:nth-child(4),
+            li:nth-child(5){
+                text-align: center;
+                border: 0;
+            }
+
         }
         .content-data {
             position: absolute;
@@ -243,6 +259,9 @@ header {
                         letter-spacing: 2px;
                         border: none;
                         background: transparent;
+                    }
+                    select{
+                        color: black;
                     }
                 }
 
