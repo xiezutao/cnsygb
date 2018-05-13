@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://www.msdhb.com/login.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{:C('APPLICATION_NAME')}</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/login/css/style.css">
+    <link href="__PUBLIC__/admin/login/css/sweet-alert.css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/admin/login/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/admin/login/js/public.js"></script>
+    <script src="__PUBLIC__/admin/login/js/sweet-alert.min.js"></script>
+    <script src="__PUBLIC__/admin/login/js/base.js"></script>
+
+    <script src="__PUBLIC__/admin/js/common.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="login-bg">
+            <img class="lg" src="http://p8b79zwnu.bkt.clouddn.com/bg.jpg" alt="">
+            <img class="ms" src="http://p8b79zwnu.bkt.clouddn.com/bg.jpg" alt="">
+        </div>
+        <div class="gxs-mask login-mask"></div>
+        <div class="login">
+            <div class="header">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="__PUBLIC__/admin/login/images/login-headerlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="display-sm-show menu-sm">
+                        <img src="__PUBLIC__/admin/login/images/menu-btn.png" alt="">
+                    </div>
+                    <ul class="display-sm-hide">
+                        <li>
+                            <a href="<?php echo 'http://'.str_replace('admin', 'www', $_SERVER['HTTP_HOST']); ?>">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>">网站后台</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-sm-list">
+                <ul>
+                    <li>
+                        <a href="<?php echo 'http://'.str_replace('admin', 'www', $_SERVER['HTTP_HOST']); ?>">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>">网站后台</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="login-form">
+                    <div class="login-logo">
+                        <img src="__PUBLIC__/admin/login/images/login-logo2.png" alt="">
+                        <p>{:C('APPLICATION_NAME')}</p>
+                    </div>
+                    <div class="form">
+                        <div class="gxs-form-control">
+                            <input name="username" type="text" class="gxs-form-group" id="username" placeholder="用户名">
+                        </div>
+                        <div class="gxs-form-control">
+                            <input name="password" type="password" class="gxs-form-group" id="password" placeholder="密 码">
+                        </div>
+                        <div class="gxs-form-control">
+                            <input name="code" type="text" class="gxs-form-group" id="code" placeholder="验证码">
+                            <label class="gxs-btn-yzm img-responsive">
+                                <button type="button" class="gxs-btn gxs-btn-default">
+                                    <img src="{:U('Auth/verifyCode')}" name="imagecode" class="verify_code" width="150" height="30" id="imagecode"
+                                        style="cursor:pointer; margin-top:2px;vertical-align: middle;" title="点击刷新验证码" onclick="resetCode();">
+                                </button>
+                            </label>
+                        </div>
+                        <div class="gxs-form-control">
+                            <button type="button" class="login-btn gxs-btn gxs-btn-block gxs-btn-info">登 录</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    <a href="#"> </a>
+                    <br>
+                    <br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+ <script>
+        function resetCode(){
+            $('img.verify_code').attr('src','{:U("Auth/verifyCode")}');
+        }        
+            function getfkey(){
+                var fkey = '';
+                $.ajax({
+                    url:"{:U('Auth/checkCode')}",
+                    type: 'POST',
+                    dataType: 'json',
+                    async:false,
+                    data: {code: $("input[name='code']").val()},
+                    success: function(res) {
+                        if(res.errorCode == 1){
+                            fkey = res.body.fkey;
+                        }else{
+                            alert(res.errorMsg);
+                            resetCode();
+                        }
+                    },
+                    error: function() {   
+                        resetCode();
+                        alerts('服务器异常，请稍后再试！')
+                    }
+                });  
+
+                return fkey;        
+            }
+
+            $('.login-btn').on('click', function(){
+                var password = $('input[name="password"]').val();
+                var username = $('input[name="username"]').val();
+
+                var param = {};
+                param.username = username;
+                param.password = (password);
+                param.fkey = getfkey();
+
+                if(param.fkey == ''){
+                    return false;
+                }
+
+                $.ajax({
+                    url : '{:U("doLogin")}',
+                    type: 'post',
+                    dataType:'json',
+                    data: param,
+                    success:function(rs){
+                        if(rs.errorCode != 1){
+                            alert(rs.errorMsg);
+                            resetCode();
+                            return false;
+                        }
+                        alert(rs.errorMsg);
+                        setTimeout(function(){
+                            window.location.href = "{:U('Index/index')}";
+                        }, 1700);
+                    },
+                    timeout:3000
+                }); 
+            });
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".menu-sm").on("click", function () {
+                var list = $(".menu-sm-list");
+                var content = $(".content");
+                var footer = $(".footer");
+                if (list.is(":hidden")) {
+                    list.show()
+                    content.hide()
+                    footer.hide()
+                } else {
+                    list.hide()
+                    content.show()
+                    footer.show()
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
